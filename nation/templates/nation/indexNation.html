@@ -42,7 +42,18 @@
     {% for iro in nationCircle %}
     <p>{{iro}}色です。</p>
     {% endfor %}
+    
+    <p>
+      {% for nation in nations %}
+        <p>
+          {{ nation.content }}
+          <a href="{% url 'nation:detailNation' nation.id %}">個別へ</a>
+        </p>
+      {% endfor %}
+    </p>
+
   </body>
 </html>
+
 
 <!-- オブジェクトでDBを操作するツール＝ORマッパー -->

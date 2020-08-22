@@ -20,5 +20,14 @@
     {% for city in cityArray %}
     <p>{{city}}は平日です。</p>
     {% endfor %}
+    
+    <p>
+      {% for introduction in introductions %}
+      <h2>{{introduction.content}}</h2>
+      <p>
+        <a href="{% url 'citymap:detail' introduction.id %}">個別詳細ページはこちら</a>
+      </p>
+      {% endfor %}
+    </p>
   </body>
 </html>

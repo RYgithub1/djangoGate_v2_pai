@@ -1,0 +1,26 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charaset="utf-8" />
+    <title>Nationいっぱい</title>
+    <style>
+      body {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>h1</h1>
+    <h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+    </h2>
+    <h5>{{ speaker }}</h5>
+    <h1>
+      <p>{{ nation.content }}</p>
+      <!-- .html追記しない場合は:でつなぐ仮説 -->
+      <a href="{% url 'nation:indexNation' %}">一覧情報</a>
+    </h1>
+  </body>
+  <body>
+</html>

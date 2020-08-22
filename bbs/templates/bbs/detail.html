@@ -1,0 +1,23 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charaset="utf-8" />
+    <title>pai bbs</title>
+    <style>
+      body {
+        padding: 10px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Django</h1>
+    <p>{{ message }}</p>
+
+    <!-- 個別詳細detail（showアクション）を記載 -->
+    <!-- <p>{{ article.content }}</p> -->
+    <p>{{ article.content }}, {{ article.user_name }}</p>
+    <!-- 一覧ページに戻るためのリンク。書き方の１つ -->
+    <p><a href="{% url 'bbs:index' %}">一覧</a></p>
+  </body>
+</html>

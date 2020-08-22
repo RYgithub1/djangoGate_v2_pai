@@ -16,8 +16,23 @@
     <p>{{ message }}</p>
     <!-- ループを使ってcontextの[配列リスト]の中身をとる -->
     <!-- python文を=なしの場合 -->
-    {% for player in players %}
+    <!-- {% for player in players %}
     <p>{{player}}はモンスターを戦った</p>
+    {% endfor %} -->
+    {% for article in articles %}
+    <!-- <p>{{ article}}</p> -->
+    <!-- <p> -->
+    <!-- {{ article.content}} -->
+    <!-- 一覧ページから、個別ページにidを指定してリンクするため -->
+    <!-- <a href="{% url 'bbs:detail' article.id %}">詳細</a>
+    </p> -->
+    <p>
+      {{ article.content}},
+      <!-- {{ article.user_name}}, -->
+      <a href="{% url 'bbs:detail' article.id %}">詳細</a>
+      <a href="{% url 'bbs:delete' article.id %}">削除</a>
+    </p>
     {% endfor %}
+    <p></p>
   </body>
 </html>
