@@ -1,0 +1,48 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charaset="utf-8" />
+    <title>Nationいっぱい</title>
+    <style>
+      body {
+        color: green;
+        /* h1 {
+              color: green;
+            }
+            h2 {
+              font-style: italic;
+            }
+            h3 {
+              color: blue;
+            }
+            h4 {
+              color: red;
+            } */
+      }
+      h2 {
+        font-style: italic;
+      }
+      h3 {
+        color: blue;
+        float: right;
+      }
+      h4 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>h1</h1>
+    <h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+    </h2>
+    <h5>{{comment}}</h5>
+    <p>{{nationcircle}}</p>
+    {% for iro in nationCircle %}
+    <p>{{iro}}色です。</p>
+    {% endfor %}
+  </body>
+</html>
+
+<!-- オブジェクトでDBを操作するツール＝ORマッパー -->

@@ -1,0 +1,23 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charaset="utf-8" />
+    <title>pai bbs</title>
+    <style>
+      body {
+        padding: 10px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hello Django</h1>
+    <!-- contect受け側{{インスタンス変数}} -->
+    <p>{{ message }}</p>
+    <!-- ループを使ってcontextの[配列リスト]の中身をとる -->
+    <!-- python文を=なしの場合 -->
+    {% for player in players %}
+    <p>{{player}}はモンスターを戦った</p>
+    {% endfor %}
+  </body>
+</html>
